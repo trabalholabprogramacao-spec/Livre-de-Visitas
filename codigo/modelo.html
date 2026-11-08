@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livro de visitas</title>
+<style>
+@@CSS@@
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="topo-int">
+    <span class="marca">Livro de visitas</span>
+    <nav aria-label="Principal">
+      <button type="button" data-acao="ir" data-aba="recepcao">Recepção</button>
+      <button type="button" data-acao="ir" data-aba="historico">Histórico</button>
+      <button type="button" data-acao="ir" data-aba="graficos">Gráficos</button>
+      <button type="button" data-acao="ir" data-aba="pessoas">Pessoas</button>
+    </nav>
+    <p class="data-hoje" id="data-hoje"></p>
+  </div>
+</header>
+<div class="faixa" id="faixa-avisos"></div>
+<main class="pagina" id="pagina">
+  <p class="carregando">Carregando o sistema…</p>
+  <noscript><p class="aviso-curto erro">Este sistema precisa do JavaScript ativado no navegador.</p></noscript>
+</main>
+<footer class="rodape" id="rodape"></footer>
+
+<!-- 1) Brython: o Python que roda dentro do navegador -->
+<script>
+/* O Brython procura os próprios arquivos ao lado do .html; como tudo está
+   dentro deste arquivo, só informamos onde ele está. */
+window.__BRYTHON__ = {brython_path: location.href.split('#')[0].split('?')[0].replace(/[^\/]*$/, '')};
+</script>
+<script>
+@@BRYTHON@@
+</script>
+<!-- 2) Módulos Python: biblioteca padrão (só o necessário) + o código deste sistema -->
+<script>
+@@MODULOS@@
+</script>
+<!-- 3) Chart.js (gráficos) e o desenho dos gráficos -->
+<script>
+@@CHARTJS@@
+</script>
+<script>
+@@GRAFICOS@@
+</script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  try {
+    brython({debug: 1, indexedDB: false});
+  } catch (e) {
+    document.getElementById('pagina').innerHTML =
+      '<p class="aviso-curto erro" role="alert">Não foi possível iniciar o sistema neste navegador. ' +
+      'Abra o arquivo no Google Chrome ou no Microsoft Edge.</p>';
+  }
+});
+</script>
+<!-- 4) Programa principal (Python): ver interface.py -->
+<script type="text/python">
+try:
+    import interface
+except Exception as erro:
+    from browser import document
+    texto = str(erro).replace("&", "&amp;").replace("<", "&lt;")
+    document["pagina"].html = ('<p class="aviso-curto erro" role="alert">O sistema não conseguiu '
+                               'iniciar: ' + texto + '</p>')
+    raise
+</script>
+</body>
+</html>
