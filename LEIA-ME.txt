@@ -1,0 +1,59 @@
+﻿LIVRO DE VISITAS
+Controle de entrada e saída da recepção
+
+COMO USAR
+
+1) Baixe o arquivo Livro_de_Visitas.html para o computador
+   (no Google Drive: botão direito > Fazer download).
+   Não abra de dentro do Drive: a visualização do Drive não roda o sistema.
+
+2) Guarde o arquivo em uma pasta fixa (por exemplo, Documentos) e dê dois
+   cliques nele. Ele abre no navegador. Use sempre o MESMO navegador
+   (Chrome ou Edge). Não precisa instalar nada nem ter internet.
+
+3) Na primeira vez, abra a aba "Pessoas" e cadastre quem atende
+   (advogados, sócios, secretárias e demais). Dá para colar vários nomes,
+   um por linha. Marque "Recebem visitas com frequência" nas 3 pessoas que
+   mais recebem: elas viram botões rápidos na recepção.
+
+4) Pronto. Aba "Recepção" para registrar quem chega e quem sai.
+
+
+NO DIA A DIA
+
+- Chegou alguém: Recepção > escolha o tipo (Cliente, Prestador, Envelope,
+  Entrega ou Outro), preencha e clique em "Registrar". O horário é o de agora.
+- Foi embora: clique em "Registrar saída" ao lado do nome.
+- Esqueceu a saída? No dia seguinte aparece um aviso amarelo. Informe a hora
+  real ou clique em "Sem registro de saída".
+- Histórico: busque por nome, empresa ou serviço e escolha as datas.
+  "Exportar para Excel" baixa uma planilha do período (abre no Excel).
+- Gráficos: resumo do período.
+- Nas primeiras semanas, continue anotando no caderno também, para comparar.
+
+
+ONDE FICAM OS DADOS (IMPORTANTE)
+
+Os registros ficam guardados DENTRO DO NAVEGADOR deste computador, não em um
+arquivo. Por isso:
+- Use sempre o mesmo navegador e o mesmo usuário do Windows.
+- Não use janela anônima.
+- Não limpe os "dados de navegação / cookies e dados de sites".
+- Faça a cópia de segurança toda semana: botão "Salvar cópia de segurança",
+  no fim da página. Guarde o arquivo baixado em lugar seguro (pen drive).
+  O sistema avisa quando passa uma semana sem cópia.
+- Para voltar uma cópia: botão "Restaurar cópia" e escolha o arquivo.
+Os dados nunca saem do computador: o sistema não usa internet.
+
+
+DEMONSTRAÇÃO
+
+Botão "Ver demonstração" (fim da página): abre com nomes FICTÍCIOS, para
+testar ou apresentar o trabalho. Não altera os dados reais.
+
+
+SE DER PROBLEMA
+
+- Página em branco ou mensagem de erro: abra no Chrome ou no Edge atualizados.
+- Sumiram os registros: use "Restaurar cópia" com a última cópia de segurança.
+- Qualquer outra coisa: tire um print e envie para quem montou o sistema.
